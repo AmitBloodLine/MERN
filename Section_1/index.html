@@ -11,6 +11,11 @@
         rel="stylesheet" />
 
     <style>
+
+        :root{
+            --theme-color:#1d478f;
+        }
+
         body {
             margin: 0;
         }
@@ -47,20 +52,68 @@
         }
 
         .feature-card{
-            border: 2px solid red;
             padding: 50px;
             text-align: center;
+            border-radius: 10px;
+            transition-duration: 0.5s;
         }
 
-        .section-features{
+        .section-features, .section-video{
             text-align: center;
             padding: 50px 300px;
         }
-
+        .section-video video{
+            width: 100%;
+        }
         .card-container{
             display: flex;
             gap: 40px;
-            color: #1d478f;
+            color: var(--theme-color);
+        }
+
+        .feature-card:hover{
+            background-color: var(--theme-color);   
+            color: whitesmoke;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .contact-form{
+            padding: 50px 300px;
+        }
+        .text-input, .text-input-area{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        .text-input-area{
+            resize: vertical;
+        }
+
+        .contact-btn{
+            padding: 10px 20px;
+            border: none;
+            background-color: var(--theme-color);
+            color: whitesmoke;
+            cursor: pointer;
+        }
+
+        footer{
+            background-color: #bbb;
+            padding: 50px 300px;
+            font-family: 'Roboto';
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;         
+        }
+        .footer-title{
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .social-link{
+            color: #000;
+            text-decoration: none;
         }
 
     </style>
@@ -70,9 +123,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-
 <body>
-
 
     <header>
         <h1 class="hero-title" style="text-align: center;">Welcome to my website</h1>
@@ -84,15 +135,11 @@
         </p>
 
     </header>
-
-
     <main>
 
         <section class="section-features">
-            <h2 class="section-title">Our Features</h2>
-
-            <div class="card-container">
-
+            <h2 class="section-title">Our Features</h2>.     
+            <div class="card-container"></div>
             <div class="feature-card">
                 <i class="fa-5x fa-solid fa-truck-fast"></i>
                 <h3 class="card-title">Fast Delivery</h3>
@@ -108,17 +155,77 @@
                 <h3 class="card-title">Fast Delivery</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni delectus vero non voluptas repellendus voluptatum labore? Incidunt impedit quas optio.</p>
             </div>
-        </div>
+        </section>
 
+        <section class="section-video">
+            <h2 class="section-title">Our Work</h2>
+            <video src="video.mp4" autoplay loop></video>
+        </section>
+
+        <section class="contact-form">
+            <h2 class="section-title">Contact US</h2>
+            <form>
+                <label>Name</label>
+                <input class="text-input" type="text">
+
+                <lable>Email Address</lable>
+                <input class="text-input" type="email">
+
+                <label>Contact No.</label>
+                <input class="text-input" type="text">
+
+                <labe>Message</labe>
+                <textarea class="text-input-area" rows="15"></textarea>
+
+                <button class="contact-btn">Submit</button>
+            </form>
         </section>
 
     </main>
-
-
     <footer>
+        <div>
+            <h3 class="footer-title">My Website Name</h3>
+            <p>&copy; 2024 Website Name</p>
+        </div>       
+        <div>
+            <h4>Find US at:</h4>
+            <p>
+                <i class="fa-brands fa-facebook"></i>
+                <a href="#" class="social-link">Facebook</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-instagram"></i>
+                <a href="#" class="social-link">Instagram</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="#" class="social-link">Linkedin</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-twitter"></i>
+                <a href="#" class="social-link">X (Twitter)</a>
+            </p>
+        </div>
 
+        <div>
+            <h4>Find US at:</h4>
+            <p>
+                <i class="fa-brands fa-facebook"></i>
+                <a href="#" class="social-link">Facebook</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-instagram"></i>
+                <a href="#" class="social-link">Instagram</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="#" class="social-link">Linkedin</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-twitter"></i>
+                <a href="#" class="social-link">X (Twitter)</a>
+            </p>
+        </div>
     </footer>
-
 </body>
-
 </html>
