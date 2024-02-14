@@ -3,50 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning</title>
+    <title>Document</title>
     <link
-    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
-    rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+
+    <style>
+        :root {
+            --theme-color: #0F0F0F;
+            --btn-size: 20px;
+        }
+    
+        body {
+            margin: 0;
+        }
+    
+        .hero-title {
+            font-family: Roboto;
+            font-size: 5rem;
+            margin: 0;
+            /* color: white; */
+        }
+    
+        header {
+            background-image: url('https://images2.alphacoders.com/134/1343198.png');
+            height: 70vh;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-family: Roboto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 200px;
+        }
+    
+        .hero-title, .hero-subtitle {
+            text-shadow: 3px 3px 5px #0000006a;
+        }
+    
+        .feature-card {
+            text-align: center;
+            border-radius: 5px;
+            transition-duration: 0.3s;
+        }
+
+        .feature-card img{
+            height: 500px;
+            width: 470px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: cover;
+        }
+
+        .section-features, .section-video{
+            text-align: center;
+            padding: 50px 300px;
+        }
+
+        .section-video video{
+            width: 100%;
+        }
+
+        .section-title{
+            font-family: Roboto;
+            font-size: 3rem;
+            color: var(--theme-color);
+        }
+
+        .card-container {
+            width: 100%;
+            display: flex;
+            gap: 40px;
+            color: var(--theme-color);
+        }
+
+        .feature-card {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .feature-card:hover {
+            background-color: #B784B7;
+            color: white;
+            box-shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+        }
+
+        .section-contact{
+            padding: 50px 300px;
+        }
+
+        .text-input, .text-input-area {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        .text-input-area{
+            resize: vertical;
+        }
+
+        .contact-btn{
+            padding: 10px 20px;
+            border: none;
+            background-color: var(--theme-color);
+            color: white;
+            cursor: pointer;
+            font-size: var(--btn-size);
+        }
+
+        footer{
+            background-image: url('https://images2.alphacoders.com/134/1343198.png');
+            /* background-color: #bbb; */
+            height: 30vh;
+            background-position: cover;
+            background-size: cover;
+            padding: 50px 300px;
+            font-family: Roboto;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .footer-title{
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .social-link{
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        .form-container{
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+        }
+
+        .form-img{
+            background-image: url('https://img.freepik.com/free-vector/contact-us-concept-illustration_114360-2299.jpg');
+            background-position: center;
+            background-size: contain;
+        }
+    </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<style>
-
-</style>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <body>
     
     <header>
-        <h1 class="hero-title" style="text-align: center;">Barista</h1>
-        <p class="hero-subtitle">A Modern Theme for Cafe's, Coffee Shop, and Bars</p>
+        <h1 class="hero-title" style="text-align: center;">Grand Theft Auto</h1>
+        
+        <p class="hero-subtitle">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cupiditate ad quas non, quisquam porro!
+        </p>
     </header>
 
     <main>
+
         <section class="section-features">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title">Play Now</h2>
 
             <div class="card-container">
+
                 <div class="feature-card">
-                    <i class="fa-brands fa-facebook"></i>
-                    <h3 class="card-title">Facebook</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- <img src="vicecity.jpg"> -->
+                    <h3 class="card-title">Gta Vice City</h3>
+                    <p>Welcome to the 1980s. From the decade of big hair, excess, and pastel suits comes a story of one man's rise to the top of the criminal pile as Grand Theft Auto returns.</p>
                 </div>
+
                 <div class="feature-card">
-                    <i class="fa-brands fa-instagram"></i>
-                    <h3 class="card-title">Instagram</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- <img src="san andreas.jpg"> -->
+                    <h3 class="card-title">San Andreas</h3>
+                    <p>Welcome to the 1980s. From the decade of big hair, excess, and pastel suits comes a story of one man's rise to the top of the criminal pile as Grand Theft Auto returns.</p>
                 </div>
+
                 <div class="feature-card">
-                    <i class="fa-brands fa-twitter"></i>
-                    <h3 class="card-title">Twitter</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- <img src="gta 5.jpg"> -->
+                    <h3 class="card-title">Grand Theft Auto 5</h3>
+                    <p>Welcome to the 1980s. From the decade of big hair, excess, and pastel suits comes a story of one man's rise to the top of the criminal pile as Grand Theft Auto returns.</p>
                 </div>
+
             </div>
+        </section>
+
+        <section class="section-video">
+            <h2 class="section-title">Miami Beach Vice City</h2>
+            <video src="video (1080p).mp4" autoplay muted loop></video>
+
+        </section>
+
+        <section class="section-contact">
+
+            <h2 class="section-title">Contact Us</h2>
+
+            <div class="form-container">
+                <div class="form-img">
+
+                </div>
+
+                <form class="contact-form">
+
+                    <label>Name</label>
+                    <input class="text-input" type="text">
+                    
+                    <label>Email Address</label>
+                    <input class="text-input" type="email">
+
+                    <label>Contact No.</label>
+                    <input class="text-input" type="text">
+
+                    <label>Message</label>
+                    <textarea class="text-input-area" rows="5"></textarea>
+
+                    <button class="contact-btn">Submit</button>
+
+                </form>
+            </div>
+
         </section>
     </main>
 
+    <footer>
+        <div>
+            <h3 class="footer-title">Rockstar</h3>
+            <p>&copy; 1998 Rockstar</p>
+        </div>
+
+        <div>
+            <h4>Find us at :</h4>
+
+            <p>
+                <i class="fa-brands fa-facebook"></i>
+                <a href="#" class="social-link">Facebook</a> 
+            </p>
+            <p>
+                <i class="fa-brands fa-square-instagram"></i>
+                <a href="#" class="social-link">Instagram</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="#" class="social-link">Linkedin</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <a href="#" class="social-link">X (Twitter)</a>
+            </p>
+        </div>
+
+
+    </footer>
 </body>
 </html>
