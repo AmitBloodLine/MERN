@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #424769;
+}
+
+.container{
+    background-color: #EEF5FF;
+    padding: 10px;
+    border: 2px solid greenyellow;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-text h1{
+    font-size: 3vh;
+    text-align: center;
+    color: black;
+}
+
+.hero-text2 p{
+    text-align: center;
+    color: black;
+}
