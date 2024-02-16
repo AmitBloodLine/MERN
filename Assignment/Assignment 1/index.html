@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment 1</title>
     <link
     href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
 
@@ -15,6 +15,11 @@
     
         body {
             margin: 0;
+            background-color: #FEFBF6;
+            /* background: url('https://images6.alphacoders.com/553/553244.jpg'); */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     
         .hero-title {
@@ -25,7 +30,7 @@
         }
     
         header {
-            background-image: url('https://images2.alphacoders.com/134/1343198.png');
+            background-image: linear-gradient(0deg, #0e0d0d36, #07070731), url('https://images2.alphacoders.com/134/1343198.png');
             height: 70vh;
             background-size: cover;
             color: white;
@@ -48,8 +53,8 @@
         }
 
         .feature-card img{
-            height: 500px;
-            width: 470px;
+            height: 520px;
+            width: 100%;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: cover;
@@ -62,6 +67,7 @@
 
         .section-video video{
             width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         }
 
         .section-title{
@@ -78,18 +84,26 @@
         }
 
         .feature-card {
+            font-family: Roboto;
             padding: 5px;
             cursor: pointer;
         }
 
         .feature-card:hover {
-            background-color: #B784B7;
-            color: white;
+            background-color: #FCAF17;
+            color: #0F0F0F;
             box-shadow: #ffffff1a 0px 1px 1px 0px inset, #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
         }
 
         .section-contact{
             padding: 50px 300px;
+        }
+
+        .section-title-contact{
+            font-family: Roboto;
+            font-size: 3rem;
+            color: var(--theme-color);
+            padding-left: 150px;
         }
 
         .text-input, .text-input-area {
@@ -114,23 +128,45 @@
         }
 
         footer{
-            background-image: url('https://images2.alphacoders.com/134/1343198.png');
-            /* background-color: #bbb; */
+            background-image: linear-gradient(0deg, #fffcfc6e, #f8f5f579), url('https://images4.alphacoders.com/853/853447.jpg');
             height: 30vh;
             background-position: cover;
             background-size: cover;
             padding: 50px 300px;
             font-family: Roboto;
-
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
         }
 
         .footer-title{
+            align-items: center;
             margin: 0;
             font-size: 30px;
         }
 
+        .footer-text{
+            padding: 20%;
+            text-align: center;
+        }
+
+        .footer-text2{
+            font-size: 25px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        .social-links{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 25px;
+        }
+
+        .social-links i{
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
         .social-link{
             color: #0F0F0F;
             text-decoration: none;
@@ -141,10 +177,28 @@
             grid-template-columns: 2fr 3fr;
         }
 
+        .form-container label{
+            font-size: 20px;
+            font-weight: 600;
+            font-family: Roboto;
+        }
+
+        .contact-form{
+            padding: 30px;
+        }
+
+        .contact-form button{
+            border-radius: 20px;   
+        }
+        .contact-form button:hover{
+            color: rgba(255, 174, 0, 0.801);
+        }
+
         .form-img{
-            background-image: url('https://img.freepik.com/free-vector/contact-us-concept-illustration_114360-2299.jpg');
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Rockstar_Games_Logo.svg/835px-Rockstar_Games_Logo.svg.png');
             background-position: center;
             background-size: contain;
+            background-repeat: no-repeat;
         }
     </style>
 
@@ -156,7 +210,7 @@
         <h1 class="hero-title" style="text-align: center;">Grand Theft Auto</h1>
         
         <p class="hero-subtitle">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cupiditate ad quas non, quisquam porro!
+            When a young street hustler, a retired bank robber, and a terrifying psychopath find themselves entangled with some of the most frightening.
         </p>
     </header>
 
@@ -168,19 +222,19 @@
             <div class="card-container">
 
                 <div class="feature-card">
-                    <!-- <img src="vicecity.jpg"> -->
+                    <img src="https://i.pinimg.com/564x/45/03/41/4503418b30265dfe57cc4a281608d926.jpg">
                     <h3 class="card-title">Gta Vice City</h3>
                     <p>Welcome to the 1980s. From the decade of big hair, excess, and pastel suits comes a story of one man's rise to the top of the criminal pile as Grand Theft Auto returns.</p>
                 </div>
 
                 <div class="feature-card">
-                    <!-- <img src="san andreas.jpg"> -->
-                    <h3 class="card-title">San Andreas</h3>
+                    <img src="https://i.pinimg.com/736x/df/61/ad/df61ad65c4525926869ec64278bf80fb.jpg">
+                    <h3 class="card-title">Gta San Andreas</h3>
                     <p>Welcome to the 1980s. From the decade of big hair, excess, and pastel suits comes a story of one man's rise to the top of the criminal pile as Grand Theft Auto returns.</p>
                 </div>
 
                 <div class="feature-card">
-                    <!-- <img src="gta 5.jpg"> -->
+                    <img src="https://i.pinimg.com/564x/0d/15/88/0d1588a990f46745a6dbb2919a82c73b.jpg">
                     <h3 class="card-title">Grand Theft Auto 5</h3>
                     <p>Welcome to the 1980s. From the decade of big hair, excess, and pastel suits comes a story of one man's rise to the top of the criminal pile as Grand Theft Auto returns.</p>
                 </div>
@@ -196,12 +250,10 @@
 
         <section class="section-contact">
 
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title-contact">Contact Us</h2>
 
             <div class="form-container">
-                <div class="form-img">
-
-                </div>
+                <div class="form-img"></div>
 
                 <form class="contact-form">
 
@@ -226,17 +278,17 @@
     </main>
 
     <footer>
-        <div>
+        <div class="footer-text">
             <h3 class="footer-title">Rockstar</h3>
             <p>&copy; 1998 Rockstar</p>
         </div>
-
-        <div>
-            <h4>Find us at :</h4>
-
+        <div class="footer-text2">
+            <h4>Find us at:</h4>
+        </div>
+        <div class="social-links">
             <p>
                 <i class="fa-brands fa-facebook"></i>
-                <a href="#" class="social-link">Facebook</a> 
+                <a href="#" class="social-link">Facebook</a>
             </p>
             <p>
                 <i class="fa-brands fa-square-instagram"></i>
@@ -248,11 +300,20 @@
             </p>
             <p>
                 <i class="fa-brands fa-square-x-twitter"></i>
-                <a href="#" class="social-link">X (Twitter)</a>
+                <a href="#" class="social-link">X(Twitter)</a>
+            </p>
+
+            <p>
+                <i class="fa-brands fa-twitch"></i>
+                <a href="#" class="social-link">Twitch</a>
+            </p>
+
+            <p>
+                <i class="fa-brands fa-youtube"></i>
+                <a href="#" class="social-link">Youtube</a>
             </p>
         </div>
-
-
+        
     </footer>
 </body>
 </html>
