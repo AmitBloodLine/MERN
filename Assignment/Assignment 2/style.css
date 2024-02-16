@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
@@ -9,6 +10,7 @@ body{
 }
 
 .container{
+    border-radius: 15px;
     background-color: #EEF5FF;
     padding: 10px;
     border: 2px solid greenyellow;
@@ -17,12 +19,21 @@ body{
 }
 
 .hero-text h1{
+    padding-top: 50px;
     font-size: 3vh;
     text-align: center;
     color: black;
+    font-weight: 700;
 }
 
 .hero-text2 p{
+    padding-top: 10px;
     text-align: center;
     color: black;
+    font-weight: 600;
+}
+
+.container .boxcard img{
+    width: 50px;
+    
 }
