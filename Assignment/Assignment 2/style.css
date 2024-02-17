@@ -12,10 +12,9 @@ body{
 .container{
     border-radius: 15px;
     background-color: #EEF5FF;
-    padding: 10px;
-    border: 2px solid greenyellow;
+    /* padding: 10px;
     height: 100%;
-    width: 100%;
+    width: 100%; */
 }
 
 .hero-text h1{
@@ -31,9 +30,4 @@ body{
     text-align: center;
     color: black;
     font-weight: 600;
-}
-
-.container .boxcard img{
-    width: 50px;
-    
 }
