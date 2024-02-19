@@ -1,127 +1,251 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <body>
-        <header>
-            <!-- place navbar here -->
-            <nav
-                class="navbar navbar-expand-md navbar-dark bg-dark"
-            >
-                <div class="container">
-                    <a class="navbar-brand" href="#">AniWorld</a>
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#" aria-current="page"
-                                    >Home
-                                    <span class="visually-hidden">(current)</span></a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Movies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Watch Together</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Community</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blogs</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >All Anime</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                        >Naruto</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >One Piece</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >Attack On Titan</a>
-                                    <a class="dropdown-item" href="#"
-                                        >Demon Slayer</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <form class="d-flex my-2 my-lg-0">
-                            <input
-                                class="form-control me-sm-2"
-                                type="text"
-                                placeholder="Search"
-                            />
-                            <button
-                                class="btn btn-outline-success my-2 my-sm-0"
-                                type="submit"
-                            >
-                                Search
-                            </button>
-                        </form>
-                    </div>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+            <div class="container">
+                
+                <a class="navbar-brand" href="#">ナルト</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anime Series</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top Airing</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Most Popular</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Naruto</a>
+                                <a class="dropdown-item" href="#">Naruto Shippuden</a>
+                                <a class="dropdown-item" href="#">One Piece</a>
+                                <a class="dropdown-item" href="#">Attack On Titan</a>
+                                <a class="dropdown-item" href="#">Death Note</a>
+                                <a class="dropdown-item" href="#">One Punch Man</a>  
+                                <a class="dropdown-item" href="#">JoJo's Bizarre</a>                             
+                            </div>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2" type="text" placeholder="search anime" />
+                        <button class="bttn">Login</button>
+                    </form>
+
                 </div>
-            </nav>
-            
-        </header>
-        <main>
 
+            </div>
 
+        </nav>
 
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+    </header>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <main>
+
+        <section>
+
+            <div class="mb-4 bg-light hero-img">
+                <div class="container py-5">
+
+                    <div class="row">
+
+                        <div class="col-md-6 my-auto hero">
+                            <h1 class="display-5 fw-bold">Anime World</h1>
+                            <p class="col-md-12 fs-5">Welcome to Anime World, your ultimate destination for all things anime! Step into a vibrant realm where imagination knows no bounds and storytelling reaches new heights. At Anime World, we're passionate about bringing you the very best of Japanese animation, offering a vast library of series, movies, and exclusives that will transport you to extraordinary worlds filled with adventure, friendship, and excitement.</p>
+                            <a href="#">Begin Your Journey</a>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="https://aniwatchtv.to/images/anw-min.webp" alt="Image">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row gy-4 box-card">
+                    <h2>Watch Now</h2>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"src="https://img.flawlessfiles.com/_r/300x400/100/5d/b4/5db400c33f7494bc8ae96f9e634958d0/5db400c33f7494bc8ae96f9e634958d0.jpg"alt="">
+                            <div class="card-body">
+                                <a><h3 class="card-title">Naruto</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"src="https://img.flawlessfiles.com/_r/300x400/100/54/90/5490cb32786d4f7fef0f40d7266df532/5490cb32786d4f7fef0f40d7266df532.jpg"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">One piece</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/9c/bc/9cbcf87f54194742e7686119089478f8/9cbcf87f54194742e7686119089478f8.jpg"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Naruto Shippuden</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/b1/47/b147d331e311a5d5c8ee81269725fc92/b147d331e311a5d5c8ee81269725fc92.png"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Solo Leveling</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/de/bf/debf027d032c6d40b91fab16b2ff9bd4/debf027d032c6d40b91fab16b2ff9bd4.jpg"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Attack on Titan</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/b3/da/b3da1326e07269ddd8d73475c5dabf2c/b3da1326e07269ddd8d73475c5dabf2c.jpg"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Chainsaw Man</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/f5/8b/f58b0204c20ae3310f65ae7b8cb9987e/f58b0204c20ae3310f65ae7b8cb9987e.jpg"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Black Clover</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/82/40/82402f796b7d84d7071ab1e03ff7747a/82402f796b7d84d7071ab1e03ff7747a.jpg"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Jujutsu Kaisen</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/cb/b2/cbb2c211b230fb106f65d302929a899f/cbb2c211b230fb106f65d302929a899f.jpg"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Ragna Crimson</h3>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/db/2f/db2f3ce7b9cab7fdc160b005bffb899a/db2f3ce7b9cab7fdc160b005bffb899a.png"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Demon Slayer</h3>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/bd/5a/bd5ae1d387a59c5abcf5e1a6a616728c/bd5ae1d387a59c5abcf5e1a6a616728c.jpg"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Bleach</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hvr">
+                        <div class="card border-0">
+                            <img class="card-img-top"
+                                src="https://img.flawlessfiles.com/_r/300x400/100/f5/d1/f5d173f8317f592c6c70d594829b89e4/f5d173f8317f592c6c70d594829b89e4.jpg"alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">One Punch Man</h3>
+                            </div>
+                        </div>
+                    </div>                                        
+                </div>               
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        
+        <!-- <div class="container py-5">
+
+            <div class="row">
+                <div class="col-md-2">
+                    <h5>Section 1</h5>   
+                </div>
+                <div class="col-md-2">
+                    <h5>Section 2</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5>Section 3</h5>                    
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+
+        </div> -->
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

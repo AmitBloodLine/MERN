@@ -1,18 +1,78 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
 }
 
-.hero {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(0deg, #08080891, #07070793), url('https://images7.alphacoders.com/134/1341150.png');
-    background-position: center;
+body{
+    background-color: #212529;
+}
+
+header .bttn{
+    background-color: #FFDD95;
+    color: #191919;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+header .bttn:hover{
+    background-color: #eec978;
+}
+
+
+section .hero-img{
+    background: linear-gradient(0deg, #f6f2f2ce, #f6f2f2ce), url('https://images7.alphacoders.com/134/1347139.png');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
-header .container{
-    height: 6vh;
+section .hero a{
+    display: inline-block;
+    text-decoration: none;
+    color: #191919;
+    background: #FFDD95;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-weight: 500;
 }
+
+section .hero a:hover{
+    transform: scale(1.1);
+    border: 1px solid #f5dca8;
+    background-color: #FFDD95;
+    color:  #191919;
+    transition: .4s;
+}
+
+.box-card{
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+}
+
+
+.box-card h2{
+    color: #FEFBF6;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* .box-card .hvr:hover{
+    background-color: whitesmoke;
+} */
+
+.box-card .card-img-top{
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-body .card-title{
+    font-size: 20px;
+}
+
+
