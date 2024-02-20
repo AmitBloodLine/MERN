@@ -82,6 +82,24 @@ img{
     padding: 10px;
 }
 
+.container-btn{
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: #ca931c;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 48%;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+}
+
+.container-btn:hover{
+    box-shadow: rgba(232, 231, 231, 0.58) 0px 3px 8px;
+}
+
 .sliderWrapper{
     color: whitesmoke;
     object-fit: cover;
