@@ -14,11 +14,12 @@ header .bttn{
     padding: 8px;
     border: none;
     border-radius: 8px;
+    margin-bottom: 11px;
 }
+
 header .bttn:hover{
     background-color: #eec978;
 }
-
 
 section .hero-img{
     background: linear-gradient(0deg, #f6f2f2ce, #f6f2f2ce), url('https://images7.alphacoders.com/134/1347139.png');
@@ -46,33 +47,196 @@ section .hero a:hover{
     transition: .4s;
 }
 
+.box-text{
+    color: #eec978;
+}
+
 .box-card{
+    color: aliceblue;
     text-align: center;
     align-items: center;
     justify-content: start;
     cursor: pointer;
 }
 
-
 .box-card h2{
-    color: #FEFBF6;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
-/* .box-card .hvr:hover{
-    background-color: whitesmoke;
-} */
-
 .box-card .card-img-top{
-    background-position: cover;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.card-body .card-title{
-    font-size: 20px;
+img{
+    height: 38vh;
 }
 
+.cardShadow:hover{
+    box-shadow: rgba(233, 232, 232, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
 
+.card-title{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.sliderWrapper{
+    color: whitesmoke;
+    object-fit: cover;
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(0deg, #0d0d0dce, #0d0d0dce), url('https://images8.alphacoders.com/806/806525.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.sliderWrapper2{
+    color: whitesmoke;
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(0deg, #0d0d0dce, #0d0d0dce), url('https://images7.alphacoders.com/644/644193.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sliderWrapper3{
+    color: whitesmoke;
+    object-fit: cover;
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(0deg, #0d0d0dce, #0d0d0dce), url('https://picfiles.alphacoders.com/546/546066.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapperText{
+    color: #D2DE32;
+    font-size: 30px;
+}
+
+.wrapperText2{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.wrapperText3{
+    margin-left: 20px;
+    margin-top: 3%;
+}
+
+.sliderbutton{
+    background-color: #D2DE32;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.sliderbtn{
+    background-color: #D2DE32;
+    border: none;
+}
+
+.sliderbutton i{
+    color: #191919;
+}
+
+.footer-content{
+    margin-top: 50px;
+    padding: 15px;
+    border: 2px solid whitesmoke;
+    color: aliceblue;
+}
+
+.section-content{
+    width: fit-content;
+}
+.footer-main{
+    background: linear-gradient(0deg, #0d0d0dce, #0d0d0dce), url('https://images3.alphacoders.com/681/681016.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18%;
+    color: aliceblue;
+    margin-top: 60px;
+}
+.footer-title, .footer-contact{
+    height: fit-content;
+    width: fit-content;
+}
+
+.footer-title h4, .contact{
+    color: #D2DE32;
+}
+
+.footer-contact i{
+    cursor: pointer;
+    padding: 8px;
+    font-size: 25px;
+}
+.footer-contact h4{
+    padding-left: 18%;
+}
+
+.footer-contact .discord:hover{
+    color: rgb(114, 71, 171);
+}
+
+.footer-contact .facebook:hover{
+    color: rgb(39, 126, 207);
+}
+
+.footer-contact .twitter:hover{
+    color: rgb(42, 192, 215);
+}
+
+.footer-contact .reddit:hover{
+    color: orange;
+}
+
+.footer-request{
+    padding: 50px;
+    width: 30%;
+}
+
+.footer-request .text-area , input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #9393937d;
+    color: aliceblue;
+}
+
+.footer-request button{
+    color: #191919;
+    padding: 10px;
+    background-color: #eec978;
+    border: none;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-request button:hover{
+    background-color: #ca931c;
+}
