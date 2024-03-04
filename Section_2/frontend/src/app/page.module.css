@@ -1,0 +1,16 @@
+.home{
+    color: black;
+    font-size: 3rem;
+}
+
+.links{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    padding-top: 25px;
+    font-size: 25px;
+}
+

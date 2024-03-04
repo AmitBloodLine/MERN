@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import styles from './page.module.css'
 
 const Home = () => {
   return (
     <div>
-      <h1 style={{ color: 'red', fontSize : '3rem' }} className='text-center mt-4'>Home Page</h1>
-      <div className="links">
+      <h1 className={`text-center mt-4 ${styles.home}`}>Home Page</h1>
+      <div className={`${styles.links}`}>
         <Link href='/login'>Login</Link>
         <Link href='/signup'>SignUp</Link>
         <Link href='/contact'>Contact</Link>
