@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./login.module.css";
 
-const page = () => {
+const Login = () => {
   return (
     <div>
       <main className={classes.random}>
@@ -51,7 +51,7 @@ const page = () => {
                     </small>
                   </div>
 
-                  <button class="btn btn-dark w-100 my-4">Submit</button>
+                  <button class="btn btn-dark w-100 my-4">Login</button>
                 </form>
               </div>
             </div>
@@ -62,4 +62,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Login;

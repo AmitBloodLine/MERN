@@ -1,5 +1,6 @@
 .random{
-    background-image: url('https://img.freepik.com/free-vector/flat-adventure-background-with-illustration_23-2149044036.jpg?t=st=1709291942~exp=1709295542~hmac=46854ea945cfe00d031e1709ce36dc1ff24bf2cd540f80f632eebd33ef7d63ad&w=1380');
+    /* background-image: url('https://img.freepik.com/free-photo/young-man-city-bus-stop-generative-ai_169016-28710.jpg?t=st=1709542006~exp=1709545606~hmac=c0349ed6d3fb147d7df03afd832e5b7ed7f6428b47b52df26dc5c8f43e6207a3&w=1380'); */
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #0E8388;
 }
