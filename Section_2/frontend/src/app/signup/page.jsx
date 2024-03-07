@@ -1,6 +1,38 @@
+'use client'
 import React from "react";
+import { useFormik } from "formik";
+import * as Yup from 'yup';
 
+const validationSchema = Yup.object({
+  username:Yup.string()
+    .required('Username is required'),
+
+  email:Yup.string()
+  .email('Invalid email address')
+  .notRequired('Email is required'),
+  password: Yup.string()
+  .min(8,'Password should be minimum 8 characters')
+  .required('Password is required'),
+  confirmPassword: Yup.string()
+  .min(8,'Password should be minimum 8 characters')
+  .required('Password is required')
+
+})
 const page = () => {
+
+  const formik = useFormik({
+    initialValues :{
+      username : '',
+      email:'',
+      password:'',
+      confirmPassword:'',
+    },
+    validationSchema: validationSchema,
+    onSubmit : values =>{
+      console.log(values);
+    }
+  })
+
   return (
     <div>
       <div className="row align-items-center vh-100">
@@ -23,7 +55,10 @@ const page = () => {
                     id="username"
                     aria-describedby="helpId"
                     placeholder=""
+                    onChange={formik.handleChange}
+                    value={formik.values.username}
                   />
+                  {formik.errors.username ? <div>{formik.errors.username}</div> : null}
                 </div>
 
                 <div class="mb-3">
@@ -38,7 +73,10 @@ const page = () => {
                     id="email"
                     aria-describedby="helpId"
                     placeholder=""
+                    onChange={formik.handleChange}
+                    value={formik.values.email}
                   />
+                  {formik.errors.email ? <div>{formik.errors.email}</div> : null}
                 </div>
 
                 <div class="mb-3">
@@ -53,7 +91,10 @@ const page = () => {
                     id="password"
                     aria-describedby="helpId"
                     placeholder=""
+                    onChange={formik.handleChange}
+                    value={formik.values.password}
                   />
+                  {formik.errors.password ? <div>{formik.errors.password}</div> : null}
                 </div>
 
                 <div class="mb-3">
@@ -65,11 +106,13 @@ const page = () => {
                     type="password"
                     class="form-control"
                     name=""
-                    id="password"
+                    id="confirmPassword"
                     aria-describedby="helpId"
                     placeholder=""
+                    onChange={formik.handleChange}
+                    value={formik.values.confirmPassword}
                   />
-
+                  {formik.errors.confirmPassword ? <div>{formik.errors.confirmPassword}</div> : null}
                 </div>
 
                 <div class="form-check">
@@ -79,7 +122,7 @@ const page = () => {
                     </label>
                 </div>
 
-                <button class="btn btn-dark w-100 my-4">Register</button>
+                <button type="submit" class="btn btn-dark w-100 my-4">Register</button>
               </form>
             </div>
           </div>
