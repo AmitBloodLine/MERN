@@ -10,4 +10,4 @@ const mySchema = new Schema({
 });
 
 module.exports = model( 'socialpost', mySchema );
-//run backend npm run dev
+//run backend npm run dev*
