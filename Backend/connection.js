@@ -9,4 +9,4 @@ mongoose.connect(url)
     console.log(err);
 });
 
-console.log('another line')
+module.exports = mongoose;

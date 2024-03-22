@@ -1,4 +1,4 @@
-const { Schema, model } = require('./connection');
+const { Schema, model } = require('../connection');
 
 const mySchema = new Schema({
     uploadedBy : { type : String, require: true},
@@ -9,4 +9,5 @@ const mySchema = new Schema({
     shares : {type: Number, default: 0}
 });
 
-modules.exports = model( 'socialpost', mySchema );
+module.exports = model( 'socialpost', mySchema );
+//run backend npm run dev
