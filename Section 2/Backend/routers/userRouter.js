@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Model = require('../models/postModel');
+const Model = require('../models/userModel');
 
 router.post('/add', (req, res) => {
     console.log(req.body);
@@ -25,4 +25,13 @@ router.get('/delete', (req, res) => {
     res.send('post delete response');
 });
 
+// getall
+// update
+// delete
+
 module.exports = router;
+
+// shaurya
+// abhay
+// yash
+// sneha
